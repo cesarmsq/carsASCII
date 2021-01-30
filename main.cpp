@@ -169,7 +169,7 @@ public:
 	void choque(struct PJ &N){
 		char sonido[] = "media\\choque.wav";
 		if(x+2>=N.X() and x<=N.X()+2 and y>=N.Y()-3 and y-3<=N.Y()+3){
-			PlaySound((LPCSTR)sonido, NULL, SND_FILENAME | SND_ASYNC);
+			//PlaySound((LPCSTR)sonido, NULL, SND_FILENAME | SND_ASYNC);
 			borrar();
 			N.COR();
 			N.borrar();
